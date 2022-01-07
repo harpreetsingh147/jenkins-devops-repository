@@ -23,5 +23,11 @@ pipeline {
 		always {
 			echo 'run always'
 		}
+		success {
+			echo 'run when build success'
+		}
+		failure {
+			echo 'run when build fails'
+		}
 	}
 }
