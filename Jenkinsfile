@@ -3,7 +3,7 @@
 pipeline
 {
 	agent any
-	stages{
+	stages {
 		stage('Build')
 		{
 			steps
@@ -26,15 +26,13 @@ pipeline
 			}
 		}
 	} post {
-		always{
+		always {
 			echo 'Run always'
 		}
-		success
-		{
+		success {
 			echo 'Run when build sccess'
 		}
-		failure
-		{
+		failure {
 			echo 'Run when build fails'
 		}
 	}
