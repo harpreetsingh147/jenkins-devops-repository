@@ -18,20 +18,10 @@ pipeline {
 				echo 'Integration Test'
 			}
 		}
-	} post {
-			always {
-				echo 'run always'
-			}
+	} 
+	post {
+		always {
+			echo 'run always'
 		}
-	// } post {
-	// 	always {
-	// 		echo 'Run always'
-	// 	}
-	// 	success {
-	// 		echo 'Run when build sccess'
-	// 	}
-	// 	failure {
-	// 		echo 'Run when build fails'
-	// 	}
-	// }
+	}
 }
